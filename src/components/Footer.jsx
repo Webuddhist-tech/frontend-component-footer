@@ -207,7 +207,7 @@ class SiteFooter extends React.Component {
                   {intl.formatMessage(messages['footer.learn.schoolsPartners'])}
                 </a>
                 <a href={PLACEHOLDER_URL} className="footer-link">
-                  {intl.formatMessage(messages['footer.learn.becomePartner'])}
+                  {intl.formatMessage(messages['footer.learn.startCampus'])}
                 </a>
               </nav>
             </div>

@@ -226,10 +226,10 @@ const messages = defineMessages({
     defaultMessage: 'Schools & Partners',
     description: 'Footer link to the schools and partners page.',
   },
-  'footer.learn.becomePartner': {
-    id: 'footer.learn.becomePartner',
-    defaultMessage: 'Become a Course Partner',
-    description: 'Footer link to become a course partner.',
+  'footer.learn.startCampus': {
+    id: 'footer.learn.startCampus',
+    defaultMessage: 'Start a Campus',
+    description: 'Footer link to start a campus.',
   },
   'footer.copyright': {
     id: 'footer.copyright',
