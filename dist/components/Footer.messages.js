@@ -220,10 +220,10 @@ const messages = defineMessages({
     defaultMessage: 'Explore Courses',
     description: 'Footer link to the explore courses page.'
   },
-  'footer.learn.schoolsPartners': {
-    id: 'footer.learn.schoolsPartners',
-    defaultMessage: 'Schools & Partners',
-    description: 'Footer link to the schools and partners page.'
+  'footer.learn.campuses': {
+    id: 'footer.learn.campuses',
+    defaultMessage: 'Campuses',
+    description: 'Footer link to the campuses page.'
   },
   'footer.learn.startCampus': {
     id: 'footer.learn.startCampus',

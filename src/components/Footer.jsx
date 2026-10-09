@@ -204,7 +204,7 @@ class SiteFooter extends React.Component {
                   href={`${(config.CATALOG_MICROFRONTEND_URL || '').replace(/\/$/, '')}/#partner-carousel-title`}
                   className="footer-link"
                 >
-                  {intl.formatMessage(messages['footer.learn.schoolsPartners'])}
+                  {intl.formatMessage(messages['footer.learn.campuses'])}
                 </a>
                 <a href={PLACEHOLDER_URL} className="footer-link">
                   {intl.formatMessage(messages['footer.learn.startCampus'])}
