@@ -177,10 +177,10 @@ class SiteFooter extends React.Component {
     }, intl.formatMessage(messages['footer.learn.exploreCourses'])), /*#__PURE__*/React.createElement("a", {
       href: `${(config.CATALOG_MICROFRONTEND_URL || '').replace(/\/$/, '')}/#partner-carousel-title`,
       className: "footer-link"
-    }, intl.formatMessage(messages['footer.learn.schoolsPartners'])), /*#__PURE__*/React.createElement("a", {
+    }, intl.formatMessage(messages['footer.learn.campuses'])), /*#__PURE__*/React.createElement("a", {
       href: PLACEHOLDER_URL,
       className: "footer-link"
-    }, intl.formatMessage(messages['footer.learn.becomePartner'])))), /*#__PURE__*/React.createElement("div", {
+    }, intl.formatMessage(messages['footer.learn.startCampus'])))), /*#__PURE__*/React.createElement("div", {
       className: `ft-col ft-col-app ${this.isColumnOpen('app') ? 'is-open' : ''}`
     }, this.renderColumnTitle('app', 'footer.column.app'), /*#__PURE__*/React.createElement("div", {
       className: "ft-col-body footer-badges",
