@@ -22,14 +22,13 @@ ensureConfig([
   'LOGO_TRADEMARK_URL',
   'SITE_NAME',
   'CATALOG_MICROFRONTEND_URL',
+  'EXTENSION_BASE_URL',
 ], 'Footer component');
 
 const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
 };
 
-// Placeholder until final destination URLs are provided.
-const PLACEHOLDER_URL = '#';
 const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=org.sherab.app';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/sherab/id6747565399';
 
@@ -125,6 +124,7 @@ class SiteFooter extends React.Component {
     const { isLogoHovered } = this.state;
     const showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
     const { config } = this.context;
+    const startCampusUrl = `${config.EXTENSION_BASE_URL}/start-campus`;
 
     return (
       <footer
@@ -206,7 +206,7 @@ class SiteFooter extends React.Component {
                 >
                   {intl.formatMessage(messages['footer.learn.campuses'])}
                 </a>
-                <a href={PLACEHOLDER_URL} className="footer-link">
+                <a href={startCampusUrl} className="footer-link">
                   {intl.formatMessage(messages['footer.learn.startCampus'])}
                 </a>
               </nav>
