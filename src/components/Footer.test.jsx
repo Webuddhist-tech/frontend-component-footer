@@ -24,6 +24,7 @@ describe('Footer', () => {
     LOGO_TRADEMARK_URL: 'https://edx-cdn.org/v3/default/logo-trademark.svg',
     SITE_NAME: 'edX',
     CATALOG_MICROFRONTEND_URL: 'http://localhost:1998/catalog',
+    EXTENSION_BASE_URL: 'http://localhost:2003',
   };
 
   beforeEach(() => {
@@ -43,6 +44,10 @@ describe('Footer', () => {
     expect(screen.getByAltText('Powered by Open edX')).toBeInTheDocument();
     expect(screen.getByRole('contentinfo')).toHaveClass('site-footer');
     expect(screen.getByText('edX', { selector: '.ft-brand-name' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Start a Campus' })).toHaveAttribute(
+      'href',
+      'http://localhost:2003/start-campus',
+    );
     expect(screen.getByText(`© ${new Date().getFullYear()} edX. All rights reserved.`)).toBeInTheDocument();
   });
 
